@@ -1,0 +1,50 @@
+$(document).ready(function () {
+    //作品列表尺寸設定
+    $('.works-list').eq(0).addClass('works-list-m');
+    $('.works-list').eq(1).addClass('works-list-l');
+    $('.works-list').eq(2).addClass('works-list-l');
+    $('.works-list').eq(3).addClass('works-list-m');
+    $('.works-list').eq(4).addClass('works-list-m');
+    $('.works-list').eq(5).addClass('works-list-l');
+    $('.works-list').eq(6).addClass('works-list-l');
+    $('.works-list').eq(7).addClass('works-list-m');
+    $('.works-list').eq(8).addClass('works-list-m');
+    $('.works-list').eq(9).addClass('works-list-l');
+    $('.works-list').eq(10).addClass('works-list-l');
+    $('.works-list').eq(11).addClass('works-list-m');
+    $('.works-list').eq(12).addClass('works-list-m');
+    $('.works-list').eq(13).addClass('works-list-l');
+    $('.works-list').eq(14).addClass('works-list-l');
+    $('.works-list').eq(15).addClass('works-list-m');
+    $('.works-list').eq(16).addClass('works-list-m');
+    $('.works-list').eq(17).addClass('works-list-l');
+    $('.works-list').eq(18).addClass('works-list-l');
+    $('.works-list').eq(19).addClass('works-list-m');
+    $(window).resize(function () {
+        //作品列表尺寸設定
+        $('.works-list').eq(0).addClass('works-list-m');
+        $('.works-list').eq(1).addClass('works-list-l');
+        $('.works-list').eq(2).addClass('works-list-l');
+        $('.works-list').eq(3).addClass('works-list-m');
+        $('.works-list').eq(4).addClass('works-list-m');
+        $('.works-list').eq(5).addClass('works-list-l');
+        $('.works-list').eq(6).addClass('works-list-l');
+        $('.works-list').eq(7).addClass('works-list-m');
+        $('.works-list').eq(8).addClass('works-list-m');
+        $('.works-list').eq(9).addClass('works-list-l');
+        $('.works-list').eq(10).addClass('works-list-l');
+        $('.works-list').eq(11).addClass('works-list-m');
+        $('.works-list').eq(12).addClass('works-list-m');
+        $('.works-list').eq(13).addClass('works-list-l');
+        $('.works-list').eq(14).addClass('works-list-l');
+        $('.works-list').eq(15).addClass('works-list-m');
+        $('.works-list').eq(16).addClass('works-list-m');
+        $('.works-list').eq(17).addClass('works-list-l');
+        $('.works-list').eq(18).addClass('works-list-l');
+        $('.works-list').eq(19).addClass('works-list-m');
+    });
+    //取消持續更新中預設行為
+    $('.update-alert').click(function (e) {
+        return false;
+    });
+});

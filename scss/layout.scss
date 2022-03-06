@@ -1,0 +1,114 @@
+@mixin p-t($top) {
+    padding-top: $top;
+}
+
+@mixin p-r($right) {
+    padding-right: $right;
+}
+
+@mixin p-b($bottom) {
+    padding-bottom: $bottom;
+}
+
+@mixin p-l($left) {
+    padding-left: $left;
+}
+
+@mixin p-x($pl, $pr) {
+    padding-left:$pl;
+    padding-right:$pr;
+}
+
+@mixin p-y($pt, $pb) {
+    padding-top:$pt;
+    padding-bottom:$pb;
+}
+
+@mixin m-t($top) {
+    margin-top: $top;
+}
+
+@mixin m-r($right) {
+    margin-right: $right;
+}
+
+@mixin m-b($bottom) {
+    margin-bottom: $bottom;
+}
+
+@mixin m-l($left) {
+    margin-left: $left;
+}
+
+@mixin m-x($ml, $mr) {
+    margin-left:$ml;
+    margin-right:$mr;
+}
+
+@mixin m-y($mt, $mb) {
+    margin-top:$mt;
+    margin-bottom:$mb;
+}
+
+@mixin relative($top, $right, $bottom, $left, $margin) {
+    position: relative;
+    top:$top;
+    left:$left;
+    right:$right;
+    bottom:$bottom;
+    margin:$margin
+}
+
+@mixin absolute($top, $right, $bottom, $left, $margin) {
+    position: absolute;
+    top:$top;
+    left:$left;
+    right:$right;
+    bottom:$bottom;
+    margin: $margin;
+}
+
+@mixin fixed($top, $right, $bottom, $left, $margin) {
+    position: fixed;
+    top:$top;
+    left:$left;
+    right:$right;
+    bottom:$bottom;
+    margin: $margin;
+}
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flex-row-r {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+@mixin flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-col-r {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+@mixin rotate($degree) {
+    transform: rotate($degree)
+}
+
+@mixin scale($n) {
+    transform: scale($n)
+}
+
+@mixin skew($x, $y) {
+    transform: skew($x, $y)
+}
+
+@mixin  translate($x, $y){
+    transform: translate($x, $y);
+}

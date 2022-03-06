@@ -1,0 +1,93 @@
+@import "layout";
+@keyframes design1-5{
+    0%{@include translate(0, 0);}
+    15%{@include translate(0, -20%);}
+    25%{@include translate(0, -25%);}
+    30%{@include translate(0, 0);}
+    50%{@include translate(0, 0);}
+    65%{@include translate(0, -20%);}
+    75%{@include translate(0, -25%);}
+    80%{@include translate(0, 0);}
+    100%{@include translate(0, 0);}
+}
+
+@keyframes design1-4{
+    0%{@include translate(0, 20%);}
+    80%{@include translate(0, 0);}
+}
+
+@keyframes design1-3{
+    0%{@include rotate(0deg);}
+    15%{@include rotate(15deg);}
+    20%{@include rotate(15deg);}
+    30%{@include rotate(0deg);}
+    50%{@include rotate(0deg);}
+    65%{@include rotate(15deg);}
+    70%{@include rotate(15deg);}
+    80%{@include rotate(0deg);}
+    100%{@include rotate(0deg);}
+}
+
+@keyframes design1-2{
+    0%{@include translate(0, 10%);}
+    80%{@include translate(0, 0);}
+}
+
+@keyframes coding1-5{
+    0%{@include translate(0, 30%);}
+    80%{@include translate(0, 0);}
+    100%{@include translate(0, 0);}
+}
+
+@keyframes coding1-4{
+    0%{@include rotate(-30deg);}
+    80%{@include rotate(0deg);}
+    100%{@include rotate(0deg);}
+}
+
+@keyframes coding1-3{
+    0%{@include rotate(0);}
+    60%{@include rotate(315deg);}
+    100%{@include rotate(360deg);}
+}
+
+@keyframes coding1-2{
+    0%{@include translate(0, 0);}
+    5%{@include translate(0, -7.5%);}
+    10%{@include translate(0, 0%);}
+    15%{@include translate(0, -7.5%);}
+    20%{@include translate(0, 0%);}
+    100%{@include translate(0, 0%);}
+}
+
+@keyframes drawing1-4{
+    0%{@include translate(-50%, 0);}
+    40%{@include translate(-50%, 0);}
+    100%{@include translate(0%, 0);}
+}
+
+@keyframes drawing1-3{
+    0%{@include translate(-2.5%, 0);}
+    100%{@include translate(2.5%, 0);}
+}
+
+@keyframes drawing1-2{
+    0%{@include translate(5%, 0);}
+    100%{@include translate(-5%, 0);}
+}
+
+$rotate-l:7.5deg;
+$rotate-r:15deg;
+@keyframes drawing1-1{
+    0%{@include m-l(0); transform: rotate($rotate-l* 1);}
+    10%{transform: rotate($rotate-l* -1);}
+    20%{transform: rotate($rotate-l* 1);}
+    30%{transform: rotate($rotate-l* -1);}
+    40%{transform: rotate($rotate-l* 1);}
+    50%{transform: rotate($rotate-l* 0);}
+    60%{transform: rotate($rotate-r* -2);}
+    70%{transform: rotate($rotate-r* -3);}
+    80%{transform: rotate($rotate-r* -2);}
+    90%{transform: rotate($rotate-r* -3);}
+    100%{@include m-l(60%); transform: rotate($rotate-r* -1);}
+}

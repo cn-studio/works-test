@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 450 285" style="enable-background:new 0 0 450 285;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);fill:#EBEBEB;}
+	.st1{clip-path:url(#SVGID_2_);}
+	.st2{fill:#EBEBEB;}
+	.st3{display:none;}
+	.st4{display:inline;}
+	.st5{font-family:'NotoSansTC-Regular-83pv-RKSJ-H';}
+	.st6{font-size:16px;}
+	.st7{letter-spacing:1;}
+	.st8{display:inline;fill:#969696;}
+	.st9{font-family:'Comfortaa-Regular';}
+	.st10{fill:#C8C8C8;}
+	.st11{fill:#2D46F0;}
+	.st12{display:inline;fill:none;stroke:#2D46F0;stroke-miterlimit:10;}
+</style>
+<g id="圖層_4">
+	<defs>
+		<rect id="SVGID_1_" width="450" height="285"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<circle class="st0" cx="11.15" cy="0" r="97.98"/>
+	<g class="st1">
+		<path class="st2" d="M450,332.5c-26.19,0-47.5-21.31-47.5-47.5s21.31-47.5,47.5-47.5s47.5,21.31,47.5,47.5S476.19,332.5,450,332.5
+			z M450,242.5c-23.43,0-42.5,19.07-42.5,42.5s19.07,42.5,42.5,42.5s42.5-19.07,42.5-42.5S473.43,242.5,450,242.5z"/>
+	</g>
+</g>
+<g id="文字" class="st3">
+	<text transform="matrix(1 0 0 1 45 49.1467)" class="st4"><tspan x="0" y="0" class="st5 st6 st7">有任何專業上的需求，歡迎透過下方的信箱按鈕</tspan><tspan x="0" y="24" class="st5 st6 st7">與我聯繫。</tspan></text>
+	<text transform="matrix(1 0 0 1 45.0001 119.721)" class="st8 st9 st6 st7">lincn65987@gmail.com</text>
+	<g class="st4">
+		<text transform="matrix(1 0 0 1 142.3078 267.2606)" class="st10 st5 st6 st7">點擊按鈕外任一處關閉</text>
+	</g>
+	<g class="st4">
+		<text transform="matrix(1 0 0 1 203.9847 213.8656)" class="st11 st5 st6 st7">信箱</text>
+	</g>
+	<path class="st12" d="M397.58,227.97H51.62c-3.64,0-6.62-2.98-6.62-6.62v-28.38c0-3.64,2.98-6.62,6.62-6.62h345.96
+		c3.64,0,6.62,2.98,6.62,6.62v28.38C404.2,224.99,401.22,227.97,397.58,227.97z"/>
+</g>
+<g id="參考線" class="st3">
+</g>
+</svg>
