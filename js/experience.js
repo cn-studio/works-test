@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    //個人經歷的點擊效果-區塊1
     $('.student').click(function (e) {
         var VisionBtn = $('.vision').data('status');
         var WebBtn = $('.web').data('status');
@@ -24,6 +25,7 @@ $(document).ready(function () {
         }
         return false;
     });
+    //個人經歷的點擊效果-區塊2
     $('.vision').click(function (e) {
         var DataBtn = $(this).data('status');
         var DataBtnText = $(this).text();
@@ -51,6 +53,7 @@ $(document).ready(function () {
         }
         return false;
     });
+    //個人經歷的點擊效果-區塊3
     $('.web').click(function (e) {
         var DataBtn = $(this).data('status');
         var DataBtnText = $(this).text();
@@ -62,7 +65,7 @@ $(document).ready(function () {
         $('.student-img > img:last-child').css({ 'opacity': '1', 'visibility': 'visible' });
         if (DataBtn == 'off' && DataBtnText == '點我') {
             $(this).data('status', 'on');
-            $(this).siblings('h3').html('資深視覺設計');
+            $(this).siblings('h3').html('視覺設計');
             $(this).siblings('p').html('華藝數位<span></span>');
             $(this).siblings('h3').addClass('deep-gray').css({ 'font-family': 'Noto Sans TC, sans-serif', 'font-weight': 'bold', 'color': 'rgb(25, 25, 25)' });
             $(this).siblings('p').css({ 'font-family': 'Noto Sans TC, sans-serif', 'font-weight': 'normal'});

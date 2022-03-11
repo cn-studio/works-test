@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    //上一頁&下一頁動態切換按鈕
+    //控制頁面內切換按鈕的指向目標
     var PageName = $('.works-content-area h1').html();
     var ListLeng = $('.works-content-list li').length;
     for (let i = 0; i < ListLeng; i++) {
@@ -9,7 +9,7 @@ $(document).ready(function () {
             var NextPage = $('.works-content-list li').eq(i+1).children('a').attr('href');
             $('.works-content-area ul li').eq(0).children('a').attr('href', PrevPage);
             $('.works-content-area ul li').eq(2).children('a').attr('href', NextPage);
-            if (i-- <= 0) {
+            if (i-- <= 1) {
                 $('.works-content-area ul li').eq(0).children('a').addClass('works-list-btn-hidden');
             }
             if (i++ >= ListLeng-3) {

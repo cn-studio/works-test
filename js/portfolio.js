@@ -1,50 +1,30 @@
 $(document).ready(function () {
-    //作品列表尺寸設定
-    $('.works-list').eq(0).addClass('works-list-m');
-    $('.works-list').eq(1).addClass('works-list-l');
-    $('.works-list').eq(2).addClass('works-list-l');
-    $('.works-list').eq(3).addClass('works-list-m');
-    $('.works-list').eq(4).addClass('works-list-m');
-    $('.works-list').eq(5).addClass('works-list-l');
-    $('.works-list').eq(6).addClass('works-list-l');
-    $('.works-list').eq(7).addClass('works-list-m');
-    $('.works-list').eq(8).addClass('works-list-m');
-    $('.works-list').eq(9).addClass('works-list-l');
-    $('.works-list').eq(10).addClass('works-list-l');
-    $('.works-list').eq(11).addClass('works-list-m');
-    $('.works-list').eq(12).addClass('works-list-m');
-    $('.works-list').eq(13).addClass('works-list-l');
-    $('.works-list').eq(14).addClass('works-list-l');
-    $('.works-list').eq(15).addClass('works-list-m');
-    $('.works-list').eq(16).addClass('works-list-m');
-    $('.works-list').eq(17).addClass('works-list-l');
-    $('.works-list').eq(18).addClass('works-list-l');
-    $('.works-list').eq(19).addClass('works-list-m');
-    $(window).resize(function () {
-        //作品列表尺寸設定
-        $('.works-list').eq(0).addClass('works-list-m');
-        $('.works-list').eq(1).addClass('works-list-l');
-        $('.works-list').eq(2).addClass('works-list-l');
-        $('.works-list').eq(3).addClass('works-list-m');
-        $('.works-list').eq(4).addClass('works-list-m');
-        $('.works-list').eq(5).addClass('works-list-l');
-        $('.works-list').eq(6).addClass('works-list-l');
-        $('.works-list').eq(7).addClass('works-list-m');
-        $('.works-list').eq(8).addClass('works-list-m');
-        $('.works-list').eq(9).addClass('works-list-l');
-        $('.works-list').eq(10).addClass('works-list-l');
-        $('.works-list').eq(11).addClass('works-list-m');
-        $('.works-list').eq(12).addClass('works-list-m');
-        $('.works-list').eq(13).addClass('works-list-l');
-        $('.works-list').eq(14).addClass('works-list-l');
-        $('.works-list').eq(15).addClass('works-list-m');
-        $('.works-list').eq(16).addClass('works-list-m');
-        $('.works-list').eq(17).addClass('works-list-l');
-        $('.works-list').eq(18).addClass('works-list-l');
-        $('.works-list').eq(19).addClass('works-list-m');
-    });
-    //取消持續更新中預設行為
+    //因最後一個由CSS強制定義，最後一個無須設定
+    portfolioImgSize(1, 'm');
+    portfolioImgSize(2, 'l');
+    portfolioImgSize(3, 'l');
+    portfolioImgSize(4, 'm');
+    portfolioImgSize(5, 'm');
+    portfolioImgSize(6, 'l');
+    portfolioImgSize(7, 'l');
+    portfolioImgSize(8, 'm');
+    portfolioImgSize(9, 'm');
+    portfolioImgSize(10, 'l');
+    portfolioImgSize(11, 'l');
+    portfolioImgSize(12, 'm');
+    portfolioImgSize(13, 'm');
+    portfolioImgSize(14, 'l');
+    portfolioImgSize(15, 'l');
+    portfolioImgSize(16, 'm');
+    portfolioImgSize(17, 'm');
+    portfolioImgSize(18, 'l');
+    portfolioImgSize(19, 'l');
+    //這裡取消最後一個的點擊回饋
     $('.update-alert').click(function (e) {
         return false;
     });
+    //函式設定 - 指定每個項目的寬度
+    function portfolioImgSize(ListNumber, ImgSize) {
+        $('.works-list').eq(ListNumber - 1).addClass('works-list-' + ImgSize);
+    }
 });

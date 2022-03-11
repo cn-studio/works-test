@@ -11,16 +11,24 @@
     <link rel="shortcut icon" type="image/png" href="image/shortcut-icon.png">
     <link rel="apple-touch-icon-precomposed" type="image/png" href="image/touch-icon.png">
     <script src="js/jquery.min.js"></script>
-    <script src="js/about.js"></script>
+    <script src="js/Illstration-size.js"></script>
+    <script src="js/Illstration-animation.js"></script>
+    <script src="js/dots.js"></script>
     <script src="js/experience.js"></script>
     <script src="js/contact.js"></script>
+    <!--為避免數據混亂，測試不使用GA-->
+    <!--
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174005429-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
         gtag('config', 'UA-174005429-1');
     </script>
+    -->
 </head>
 
 <body>
@@ -38,9 +46,6 @@
             <div class="about-title-ch">
                 <h6 class="about-title-one typing-show-one-ch">哈囉，陌生人。</h6>
                 <h2 class="about-title-two typing-show-two-ch">嗨，我是林淇琛。</h2>
-            </div>
-            <div class="about-title-en">
-                <h2 class="about-title typing-show-en">Hi, I am Tim Lin</h2>
             </div>
             <p>目前從事美術設計相關的工作內容。<br>
                 工作之餘喜歡研究前端技術，透過程式碼與視覺元素的契合，創造出讓人耳目一新的感官衝擊。</p>
@@ -112,7 +117,7 @@
                     <h3>設計科系</h3>
                     <p>畢業校友<span></span></p>
                     <span class="experience-area-text-time">2007 - 2014</span>
-                    <a href="#" class="experience-area-text-click student">點我</a>
+                    <a href="#" class="btn student">點我</a>
                 </div>
             </div>
             <div class="experience-area fade-in">
@@ -125,7 +130,7 @@
                     <h3>??????</h3>
                     <p>??????<span></span></p>
                     <span class="experience-area-text-time">2016 - 2018</span>
-                    <a href="#" class="experience-area-text-click vision" data-status="off">點我</a>
+                    <a href="#" class="btn vision" data-status="off">點我</a>
                 </div>
             </div>
             <div class="experience-area fade-in">
@@ -138,7 +143,7 @@
                     <h3>??????</h3>
                     <p>??????<span></span></p>
                     <span class="experience-area-text-time">2018 - Present</span>
-                    <a href="#" class="experience-area-text-click web" data-status="off">點我</a>
+                    <a href="#" class="btn web" data-status="off">點我</a>
                 </div>
             </div>
         </div>
@@ -168,15 +173,6 @@
             <p>為保持最佳使用體驗，建議使用Chorme瀏覽器進行瀏覽</p>
         </div>
     </footer>
-    <div class="contact">
-        <div class="contact-area move-defult">
-            <p>有任何專業上的需求，歡迎透過下方的信箱按鈕與我聯繫。
-                <br><br><span>email : lincn65987@gmail.com</span>
-            </p>
-            <a href="mailto:lincn65987@gmail.com" class="contact-area-btn">信箱</a>
-            <span class="contact-other">點擊按鈕以外的任一處關閉</span>
-        </div>
-    </div>
 </body>
 
 </html>
