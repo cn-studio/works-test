@@ -209,7 +209,7 @@ header{
             font-size: 60px;
             font-family: 'Racing Sans One', cursive;
             white-space: nowrap;
-            color: $white;
+            color: transparent;
             position: relative;
             overflow: hidden;
             animation: title-other-color 1.25s 1s linear forwards;
@@ -1259,12 +1259,6 @@ footer{
             width:550px;
             p{
                 font-size: 36px;
-                font-family: 'Racing Sans One', cursive;
-                white-space: nowrap;
-                color: $white;
-                position: relative;
-                overflow: hidden;
-                animation: title-other-color 1.25s 1s linear forwards;
                 span{
                     @include absolute(0, none, 0, -101%, auto);
                     height: 100%;;
@@ -2433,7 +2427,7 @@ footer{
         }
     }
     .contact{
-        @include bg-color-a($white, 0.9);
+        @include bg-color-a($white, 0.95);
         .contact-area{
             @include p-x(0, 0);
             @include p-y(0, 0);
@@ -2443,6 +2437,7 @@ footer{
             background-color: transparent;
             a{
                 color: $white;
+                border: none;
                 background-color: $blue;
             }
         }
