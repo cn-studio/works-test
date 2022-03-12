@@ -1785,7 +1785,7 @@ footer{
             li{
                 @include p-y(0, 0);
                 a{
-                    @include p-y(25px, 15px);
+                    @include p-y(15px, 15px);
                     font-size: 24px;
                     &:after{
                         display: none;
@@ -2173,7 +2173,7 @@ footer{
             li:first-child{
                 @include m-x(0, auto);
                 a{
-                    font-size: 24px;
+                    font-size: 16px;
                 }
             }
             li:nth-child(2){
