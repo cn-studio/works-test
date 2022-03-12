@@ -144,7 +144,7 @@ header{
             @include m-x(2.5%, 2.5%);
         }
         li:last-child{
-            @include m-l(2.5%);
+            @include m-x(2.5%, 0);
         }
     }
 }
@@ -1082,10 +1082,13 @@ $expertise-time:2.5s;
             }
             //內文敘述
             p{
+                font-size: 16px;
                 line-height: 24px;
                 color: $deep-gray;
             }
             span{
+                font-size: 16px;
+                line-height: 24px;
                 display: block;
                 color: $gray;
             }
@@ -1512,7 +1515,7 @@ footer{
                 @include m-x(5%, 5%);
             }
             li:last-child{
-                @include m-l(5%);
+                @include m-x(5%, 0);
             }
         }
     }
@@ -1779,7 +1782,6 @@ footer{
         ul{
             @include m-x(10%, 10%);
             @include flex-row;
-            flex-wrap: wrap;
             li{
                 @include p-y(0, 0);
                 a{
@@ -1792,22 +1794,21 @@ footer{
                 }
             }
             li:first-child{
-                width: 100%;
+                @include m-x(0, auto);
                 a{
-                    @include p-y(25px, 5px);
                     text-align: center;
                     font-size: 28px;
                     font-family: 'Racing Sans One', cursive;
                 }
             }
             li:nth-child(2){
-                @include m-x(0, auto);
+                @include m-x(auto, 16px);
             }
             li:nth-child(3){
-                @include m-x(auto, auto);
+                @include m-x(16px, 16px);
             }
             li:last-child{
-                @include m-l(auto);
+                @include m-x(16px, 0);
             }
         }
     }
@@ -2162,18 +2163,27 @@ footer{
     header{
         @include fixed(none, 0, none, 0, auto);
         ul{
-            @include m-x(10%, 10%);
+            @include m-x(5%, 5%);
             @include flex-row;
-            flex-wrap: wrap;
             li{
                 a{
                     font-size: 16px;
                 }
             }
             li:first-child{
+                @include m-x(0, auto);
                 a{
                     font-size: 24px;
                 }
+            }
+            li:nth-child(2){
+                @include m-x(auto, 12px);
+            }
+            li:nth-child(3){
+                @include m-x(12px, 12px);
+            }
+            li:last-child{
+                @include m-x(12px, 0);
             }
         }
     }
@@ -2186,7 +2196,7 @@ footer{
         }
         .title-other{
             @include m-x(auto, auto);
-            width:80%;
+            width:90%;
             p{
                 font-size: 28px;
             }
@@ -2210,6 +2220,7 @@ footer{
     $tag-size: 100px;
     $arrow-size: 30px;
     .works{
+        @include m-x(5%, 5%);
         .works-list{
             .works-list-img{
                 .works-list-img-area{
@@ -2219,7 +2230,7 @@ footer{
                         width: $tag-size;
                         box-shadow: 0 0 5px $light-gray;
                         .works-list-img-area-tag-title{
-                            @include m-x(10%, 10%);
+                            @include m-x(5%, 5%);
                             @include m-y(10%, 10%);
                             font-size: 14px;
                             line-height: 21px;
@@ -2229,7 +2240,7 @@ footer{
                         @include absolute(none ,0 ,0, 0, none);
                         height: $arrow-size;
                         p{
-                            @include p-x(10%, 0);
+                            @include p-x(5%, 0);
                             font-size: 14px;
                             line-height: 21px;
                         }
@@ -2248,11 +2259,15 @@ footer{
             }
         }
     }
+    .works-content{
+        @include m-x(5%, 5%);
+    }
     $size:28px;
     $spacing:7px;
     $border-width:3px;
     #about{
         .about{
+            @include m-x(5%, 5%);
             @include p-y(45%, 45%);
             .about-title-ch{
                 @include m-y(15px, 15px);
@@ -2322,13 +2337,13 @@ footer{
             width:225px*0.65;
         }
         .expertise{
-            @include m-x(10%, 10%);
+            @include m-x(5%, 5%);
             .expertise-area{
                 @include flex-col;
                 .expertise-area-img{
                     @include m-y(8px, 8px);
                     @include m-x(auto, auto);
-                    width:80%;
+                    width:90%;
                     img{
                         animation: none;
                     }
@@ -2357,13 +2372,13 @@ footer{
         }
     }
     .experience{
-        @include m-x(10%, 10%);
+        @include m-x(5%, 5%);
         .experience-area{
             @include p-y(24px, 24px);
             @include flex-col;
             .experience-area-img{
                 @include m-x(auto, auto);
-                width: 80%;
+                width: 90%;
             }
             .experience-area-text{
                 width: 100%;
@@ -2375,7 +2390,7 @@ footer{
             flex-direction: column;
             .experience-area-img{
                 @include m-x(auto, auto);
-                width: 80%;
+                width: 90%;
             }
             .experience-area-text{
                 width: 100%;
@@ -2421,6 +2436,7 @@ footer{
     }
     footer{
         div{
+            @include m-x(5%, 5%);
             p{
                 @include p-y(4px, 4px);
             }
@@ -2431,7 +2447,7 @@ footer{
         .contact-area{
             @include p-x(0, 0);
             @include p-y(0, 0);
-            width: 80%;
+            width: 90%;
             max-width: unset;
             box-shadow: none;
             background-color: transparent;
