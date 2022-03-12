@@ -24,10 +24,9 @@ $(document).ready(function () {
             $('.works-list-img-area').eq(0).css({ 'margin-top': HeaderHeight })
             $('.works-list-img-area').eq(1).css({ 'margin-top': HeaderHeight })
         } else if (WindowWidth < 960 && WindowWidth > 480) {
-            $('.works-list-img-area').height(WorksWidth * 0.75);
+            $('.works-list-img-area').height(WorksWidth * 0.6);
             $('.works-list-img-area').css({ 'margin-top': '2.5%', 'margin-bottom': '2.5%' });
             $('.works-list-img-area').eq(0).css({ 'margin-top': HeaderHeight })
-            $('.works-list-img-area').eq(1).css({ 'margin-top': HeaderHeight })
         }
         else {
             $('.works-list-img-area').height(WorksWidth);

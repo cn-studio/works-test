@@ -1786,8 +1786,7 @@ footer{
                 @include p-y(0, 0);
                 a{
                     @include p-y(25px, 15px);
-                    font-size: 18px;
-                    font-family: 'Comfortaa', cursive;
+                    font-size: 24px;
                     &:after{
                         display: none;
                     }
@@ -2167,6 +2166,7 @@ footer{
             @include flex-row;
             li{
                 a{
+                    font-family: 'Comfortaa', cursive;
                     font-size: 16px;
                 }
             }
