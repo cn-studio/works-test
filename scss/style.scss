@@ -2344,6 +2344,7 @@ footer{
                     @include m-y(8px, 8px);
                     @include m-x(auto, auto);
                     width:90%;
+                    max-width: 280px;
                     img{
                         animation: none;
                     }
@@ -2379,6 +2380,7 @@ footer{
             .experience-area-img{
                 @include m-x(auto, auto);
                 width: 90%;
+                max-width: 280px;
             }
             .experience-area-text{
                 width: 100%;
